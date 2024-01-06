@@ -1,0 +1,14 @@
+# Database
+*.sqlite
+*.db
+*.sql
+
+# PgAdmin files
+*.pgadmin*
+
+# PgAdmin directories
+pgAdmin/
+
+# Operating System files
+.DS_Store
+Thumbs.db
