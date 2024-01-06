@@ -31,11 +31,20 @@ ALTER COLUMN people DROP NOT NULL;
 ALTER TABLE new_info
 DROP COLUMN IF EXISTS people;
 
+DELETE FROM employees
+WHERE emp_id = 2;
+
+UPDATE employees
+SET emp_id = 2
+WHERE emp_id = 3;
 
 */
 
 
-SELECT * FROM new_info
+SELECT * FROM employees
+
+
+
 
 
 
