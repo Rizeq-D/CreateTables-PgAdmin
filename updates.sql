@@ -40,29 +40,9 @@ WHERE emp_id = 3;
 
 */
 
-
-SELECT * FROM employees
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+CREATE VIEW customer_info AS 
+SELECT username, email, created_on FROM account
+INNER JOIN account_job ON account_job.user_id = account.user_id;
 
 
 
