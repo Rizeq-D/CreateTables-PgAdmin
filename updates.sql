@@ -38,11 +38,17 @@ UPDATE employees
 SET emp_id = 2
 WHERE emp_id = 3;
 
-*/
-
 CREATE VIEW customer_info AS 
 SELECT username, email, created_on FROM account
 INNER JOIN account_job ON account_job.user_id = account.user_id;
+
+CREATE OR REPLACE VIEW customer_info AS 
+SELECT username, email, created_on, last_login FROM account
+INNER JOIN account_job ON account_job.user_id = account.user_id;
+
+*/
+
+SELECT * FROM customer_info
 
 
 
